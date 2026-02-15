@@ -27,11 +27,6 @@ jobs:
         with:
           secrets: ${{ toJSON(secrets) }}
 
-      - name: Setup Docker
-        uses: docker/setup-docker@v3
-        with:
-          version: '24.0.0'
-
       - name: Wilco checks
         id: Wilco
         uses: trywilco/actions@main
