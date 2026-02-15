@@ -50,14 +50,14 @@ function has_character(character, string) {
         return "does not take numerical arguments";
     }
 
-    // Error handling: check if character is a single character
-    if (character.length !== 1) {
-        return "non-single character input";
-    }
-
     // Error handling: check if character or string is empty
     if (character === "" || string === "") {
         return "blank input";
+    }
+
+    // Error handling: check if character is a single character
+    if (character.length !== 1) {
+        return "non-single character input";
     }
 
     // Case-insensitive search: normalize both to lowercase
